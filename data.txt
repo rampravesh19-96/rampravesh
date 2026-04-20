@@ -1,0 +1,111 @@
+2) React Web / Frontend Engineer Variant
+
+Use this when applying to:
+
+Frontend Engineer
+React Developer
+Next.js Developer
+Software Engineer – Frontend
+Change only these fields from the master:
+{
+  "title": "Frontend Engineer",
+  "headline": "Frontend Engineer | React.js, Next.js, TypeScript | Scalable Frontend Applications",
+  "summary": "Frontend Engineer with 4+ years of experience building responsive web applications using React.js, Next.js, TypeScript, and JavaScript. Strong in reusable component architecture, state management, performance optimization, API integration, authentication flows, checkout and booking journeys, and user-centric product development. Experienced in building production-ready frontend features across ecommerce, travel-tech, and service-based client projects.",
+  "topProjectOrder": [
+    "Smart Ecommerce Platform with Admin Dashboard",
+    "Smart Service Booking App"
+  ],
+  "topSkillsFocus": [
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Tailwind CSS",
+    "TanStack Query",
+    "Zustand",
+    "React Hook Form",
+    "API Integration",
+    "Front-End Development"
+  ]
+}
+Naukri headline for this version
+Frontend Engineer with 4+ years of experience in React.js, Next.js, TypeScript, JavaScript, Tailwind CSS, Zustand and TanStack Query
+3) React Native / Mobile Frontend Variant
+
+Use this when applying to:
+
+React Native Developer
+Mobile App Developer
+Frontend Engineer (Mobile)
+Software Engineer – Mobile Frontend
+Change only these fields from the master:
+{
+  "title": "React Native Developer",
+  "headline": "React Native Developer | 4+ Years | React Native, Expo, TypeScript, React.js | Mobile Applications",
+  "summary": "React Native Developer with 4+ years of experience in frontend engineering and hands-on experience building responsive mobile applications using React Native, Expo, TypeScript, JavaScript, and React.js. Strong in navigation flows, state management, API integration, booking journeys, authentication, mobile-first UX, and production-ready feature delivery across mobile and web projects.",
+  "topProjectOrder": [
+    "Smart Service Booking App",
+    "Smart Ecommerce Platform with Admin Dashboard"
+  ],
+  "topSkillsFocus": [
+    "React Native",
+    "Expo",
+    "TypeScript",
+    "React Navigation",
+    "JavaScript",
+    "React.js",
+    "Zustand",
+    "TanStack Query",
+    "Mobile Application Development",
+    "API Integration"
+  ]
+}
+Naukri headline for this version
+React Native Developer with 4+ years of experience in React Native, Expo, TypeScript, JavaScript, React Navigation, Zustand and TanStack Query
+Best use by platform
+LinkedIn
+
+Do not over-customize daily.
+Use the balanced/master profile.
+
+Best LinkedIn identity:
+
+Headline: Frontend Engineer | 4+ Years | R
+About = balanced web + mobile
+Skills = mixed, but React/React Native first
+Naukri
+
+Use the balanced/master resume as the uploaded resume.
+
+Then optimize:
+
+Resume headline
+Profile summary
+Key skills
+IT skills
+Projects
+Work samples
+
+That is often enough for recruiter search before applying.
+
+Direct apply on company portals / LinkedIn Easy Apply
+
+Use:
+
+React Web variant for web/frontend roles
+React Native variant for mobile roles
+My final recommendation
+
+For speed, keep only these files:
+
+Ram_Pravesh_Frontend.pdf
+Ram_Pravesh_React.pdf
+Ram_Pravesh_ReactNative.pdf
+
+Best practical rule
+Naukri uploaded resume → Master
+LinkedIn profile → Master
+Apply to React/Next roles → React Web variant
+Apply to React Native roles → React Native variant
+
+If you want, next I’ll give you the exact JSON for the React Web variant and exact JSON for the React Native variant, fully written out, not just deltas.

@@ -1,0 +1,244 @@
+{
+  "name": "Ram Pravesh Singh",
+  "location": "Noida, Uttar Pradesh, India",
+  "email": "praveshram1204@gmail.com",
+  "phone": "+91-7320863504",
+  "title": "Frontend Engineer",
+  "headline": "Frontend Engineer | React.js, React Native, Next.js, TypeScript | Scalable Web & Mobile Applications",
+  "summary": "Frontend Engineer with 4+ years of experience building responsive web and mobile applications using React.js, React Native, Next.js, TypeScript, and JavaScript. Strong in reusable component architecture, state management, performance optimization, API integration, authentication flows, checkout and booking journeys, and user-centric product development. Experienced in building production-ready frontend features across ecommerce, travel-tech, and service-based client projects, with backend integration experience in Node.js, Express.js, Prisma, and SQL databases.",
+  "contactLinks": [
+    {
+      "label": "Portfolio",
+      "href": "https://rampravesh-dev.vercel.app"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com/in/ram-pravesh-singh"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/rampravesh19-96"
+    }
+  ],
+  "skillGroups": [
+    {
+      "title": "Frontend",
+      "items": [
+        "React.js",
+        "React Native",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Responsive UI",
+        "Reusable Components",
+        "Component Architecture",
+        "Routing",
+        "Form Handling",
+        "Client-side Validation",
+        "API Integration"
+      ]
+    },
+    {
+      "title": "Frontend Architecture & State Management",
+      "items": [
+        "Context API",
+        "Redux Toolkit",
+        "Zustand",
+        "TanStack Query",
+        "React Hook Form",
+        "Zod",
+        "State Management",
+        "Feature-based Architecture",
+        "Reusable UI Systems"
+      ]
+    },
+    {
+      "title": "Performance & UX",
+      "items": [
+        "Performance Optimization",
+        "Code Splitting",
+        "Lazy Loading",
+        "Rendering Optimization",
+        "Core Web Vitals",
+        "Loading / Empty / Error States",
+        "Responsive Design",
+        "Mobile-first UX"
+      ]
+    },
+    {
+      "title": "Mobile Development",
+      "items": [
+        "React Native",
+        "Expo",
+        "React Navigation",
+        "Cross-platform App Development",
+        "Mobile UI Development",
+        "Booking Flow UX",
+        "Secure Storage",
+        "Gesture-based Interactions",
+        "Android APK Build",
+        "Expo EAS Build"
+      ]
+    },
+    {
+      "title": "Backend Integration & APIs",
+      "items": [
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "Authentication",
+        "Authorization",
+        "Validation",
+        "Error Handling",
+        "Mock APIs",
+        "Route Handlers",
+        "Clerk"
+      ]
+    },
+    {
+      "title": "Databases & ORM",
+      "items": [
+        "Prisma",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "SQL",
+        "Neon PostgreSQL",
+        "TiDB"
+      ]
+    },
+    {
+      "title": "Commerce, Booking & Payments",
+      "items": [
+        "Checkout Flow",
+        "Booking Flow",
+        "Order Management",
+        "Booking Lifecycle",
+        "Payment Integration",
+        "Payment Verification",
+        "Razorpay",
+        "Fare Recheck",
+        "Transaction-sensitive Workflows"
+      ]
+    },
+    {
+      "title": "Deployment & Tooling",
+      "items": [
+        "Vercel",
+        "Expo EAS Build",
+        "Netlify",
+        "Git",
+        "GitHub",
+        "GitHub Actions",
+        "CI/CD",
+        "Docker"
+      ]
+    },
+    {
+      "title": "Testing & Developer Practices",
+      "items": [
+        "Debugging",
+        "Cross-browser Testing",
+        "Unit Testing",
+        "Integration Testing",
+        "Code Review",
+        "Version Control",
+        "Production Readiness"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Frontend Engineer",
+      "scope": "Sachtech Solutions",
+      "startDate": "Sep 2025",
+      "endDate": "Present",
+      "bullets": [
+        "Working on multiple client-facing web and mobile applications using React.js, React Native, Next.js, TypeScript, and JavaScript in a service-based delivery environment.",
+        "Built and enhanced reusable UI components, screens, and feature flows across both web and React Native applications with focus on responsiveness, scalability, and maintainability.",
+        "Integrated frontend applications with REST APIs, authentication flows, form validation, and business workflows to deliver production-ready user experiences.",
+        "Handled bug fixing, feature delivery, release support, and cross-team collaboration across multiple projects with fast turnaround and delivery-focused execution."
+      ]
+    },
+    {
+      "title": "Frontend Engineer",
+      "scope": "HOI Travel Tech",
+      "startDate": "Jul 2024",
+      "endDate": "Aug 2025",
+      "bullets": [
+        "Built responsive travel booking journeys across search, results refinement, traveller capture, authentication, protected booking flow, and confirmation using React.js, Next.js, TypeScript, and Tailwind CSS.",
+        "Developed reusable UI components and frontend flows for booking experiences with focus on usability, performance, and reliability.",
+        "Integrated frontend applications with booking, payment, and fare recheck APIs to support confirmation-sensitive user journeys.",
+        "Collaborated with backend and deployment workflows to deliver production-ready booking experiences and operational reliability."
+      ]
+    },
+    {
+      "title": "Frontend Engineer",
+      "scope": "Giottus Technology",
+      "startDate": "Jan 2022",
+      "endDate": "Jun 2024",
+      "bullets": [
+        "Built customer-facing ecommerce journeys across search, product detail, cart, coupons, authentication, protected checkout, and post-order visibility using React.js, Next.js, TypeScript, and Tailwind CSS.",
+        "Created responsive and reusable frontend components to improve user experience across key commerce flows.",
+        "Integrated checkout, payment, and order APIs to keep pricing, auth state, and confirmation-sensitive transactions aligned.",
+        "Worked across UI, API integration, and release workflows to deliver stable frontend features in production."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Smart Ecommerce Platform with Admin Dashboard",
+      "stack": "Next.js, TypeScript, Tailwind CSS, TanStack Query, Zustand, React Hook Form, Zod, TanStack Table, Recharts, MSW, Vercel",
+      "bullets": [
+        "Built a production-style ecommerce platform with a customer storefront and role-based admin dashboard covering product discovery, product detail, cart, checkout, order success, account order history, and order detail views.",
+        "Implemented protected customer and admin flows, admin product create/edit workflows, admin order detail with status updates, and typed mock API integrations using TanStack Query and Zustand.",
+        "Added practical AI-powered dashboard insight cards and delivered a portfolio-grade frontend architecture with reusable UI, validated forms, filters, tables, and responsive product experiences."
+      ],
+      "liveHref": "https://smart-ecommerce-admin.vercel.app/",
+      "codeHref": "https://github.com/rampravesh19-96/smart-ecommerce-admin"
+    },
+    {
+      "title": "Smart Service Booking App",
+      "stack": "React Native, Expo, TypeScript, React Navigation, TanStack Query, Zustand, React Hook Form, Zod, Expo Secure Store, Expo Image, Reanimated, EAS Build",
+      "bullets": [
+        "Built a production-style React Native service-booking app with validated auth, home discovery, search, category listing, service detail, reviews, and a multi-step booking flow.",
+        "Implemented booking lifecycle features including address selection, slot selection, booking summary, mock payment UX, booking success, booking history, cancel/reschedule flows, profile/settings, notifications, and support screens.",
+        "Added a practical AI-powered Smart Service Finder feature to map real user needs to service suggestions and booking guidance, and generated Android APK builds for device testing using Expo EAS."
+      ],
+      "liveHref": "https://expo.dev/accounts/rams1996/projects/smart-service-booking-app/builds/7d8b696c-1fd2-4c20-b3b2-2fbade6fa33f",
+      "codeHref": "https://github.com/rampravesh19-96/smart-service-booking-mobile"
+    }
+  ],
+  "achievements": [
+    "Built and delivered responsive web and mobile features across ecommerce, travel-tech, and client-service projects using React.js, React Native, Next.js, and TypeScript.",
+    "Built and supported 10+ user-facing frontend flows across search, product detail, checkout, booking, authentication, payments, and order lifecycle experiences.",
+    "Improved development velocity by ~25–35% by streamlining frontend-backend integration, API workflows, reusable components, and deployment processes.",
+    "Reduced debugging and issue resolution time by ~30% through better frontend workflows, logging improvements, and AI-assisted development tools.",
+    "Optimized frontend performance and API response handling, improving load time and perceived responsiveness across key user journeys by ~20–30%.",
+    "Maintained high reliability in transaction-sensitive flows involving authentication, dynamic pricing, payment verification, booking confirmation, and real-time status updates."
+  ],
+  "certifications": [
+    "React – The Complete Guide (incl. Hooks, Redux) – Udemy",
+    "CI/CD for Developers – GitHub Actions & Deployment Pipelines – Udemy / Coursera",
+    "Node.js, Express & MongoDB – The Complete Backend Bootcamp – Udemy",
+    "ChatGPT Prompt Engineering for Developers – DeepLearning.AI",
+    "Generative AI: Prompt Engineering Basics – IBM (Coursera)"
+  ],
+  "aiTools": [
+    "ChatGPT",
+    "OpenAI",
+    "Claude",
+    "Gemini",
+    "Cursor",
+    "GitHub Copilot",
+    "Perplexity"
+  ],
+  "education": {
+    "degree": "B.Tech - Computer Science & Engineering",
+    "institution": "RGPV, Bhopal",
+    "year": "2021"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "name": "Ram Pravesh Singh",
+  "location": "Noida, Uttar Pradesh, India",
+  "email": "praveshram1204@gmail.com",
+  "phone": "+91-7320863504",
+  "title": "Frontend Engineer",
+  "headline": "Frontend Engineer | 4+ Years | React.js, Next.js, TypeScript | Scalable Frontend Applications",
+  "summary": "Frontend Engineer with 4+ years of experience building responsive web applications using React.js, Next.js, TypeScript, and JavaScript. Strong in reusable component architecture, state management, performance optimization, API integration, authentication flows, checkout and booking journeys, and user-centric product development. Experienced in ecommerce, travel-tech, and service-based client projects.",
+  "contactLinks": [
+    { "label": "Portfolio", "href": "https://rampravesh-dev.vercel.app" },
+    { "label": "LinkedIn", "href": "https://linkedin.com/in/ram-pravesh-singh-619000186" },
+    { "label": "GitHub", "href": "https://github.com/rampravesh19-96" }
+  ],
+  "skillGroups": [
+    {
+      "title": "Frontend",
+      "items": [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS",
+        "Responsive UI",
+        "Reusable Components",
+        "Routing",
+        "API Integration",
+        "Client-side Validation"
+      ]
+    },
+    {
+      "title": "State Management & Forms",
+      "items": [
+        "Redux Toolkit",
+        "Zustand",
+        "TanStack Query",
+        "React Hook Form",
+        "Zod",
+        "Context API"
+      ]
+    },
+    {
+      "title": "Performance & UX",
+      "items": [
+        "Performance Optimization",
+        "Code Splitting",
+        "Lazy Loading",
+        "Rendering Optimization",
+        "Core Web Vitals",
+        "Responsive Design"
+      ]
+    },
+    {
+      "title": "Backend Integration & APIs",
+      "items": [
+        "REST APIs",
+        "Authentication",
+        "Validation",
+        "Mock APIs",
+        "Route Handlers",
+        "Node.js",
+        "Express.js"
+      ]
+    },
+    {
+      "title": "Deployment & Tooling",
+      "items": [
+        "Vercel",
+        "Netlify",
+        "Git",
+        "GitHub",
+        "GitHub Actions",
+        "CI/CD"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Frontend Engineer",
+      "scope": "Sachtech Solutions",
+      "startDate": "Sep 2025",
+      "endDate": "Present",
+      "bullets": [
+        "Working on multiple client-facing web applications using React.js, Next.js, TypeScript, and JavaScript in a service-based delivery environment.",
+        "Built and enhanced reusable UI components, screens, and feature flows with focus on responsiveness, scalability, and maintainability.",
+        "Integrated frontend applications with REST APIs, authentication flows, form validation, and business workflows to deliver production-ready user experiences.",
+        "Handled bug fixing, feature delivery, release support, and cross-team collaboration across multiple projects."
+      ]
+    },
+    {
+      "title": "Frontend Engineer",
+      "scope": "HOI Travel Tech",
+      "startDate": "Jul 2024",
+      "endDate": "Aug 2025",
+      "bullets": [
+        "Built responsive travel booking journeys across search, traveller capture, authentication, protected booking flow, and confirmation using React.js, Next.js, TypeScript, and Tailwind CSS.",
+        "Developed reusable UI components and frontend flows for booking experiences with focus on usability, performance, and reliability.",
+        "Integrated booking, payment, and fare recheck APIs to support confirmation-sensitive user journeys.",
+        "Collaborated with backend and deployment workflows to deliver production-ready booking experiences."
+      ]
+    },
+    {
+      "title": "Frontend Engineer",
+      "scope": "Giottus Technology",
+      "startDate": "Jan 2022",
+      "endDate": "Jun 2024",
+      "bullets": [
+        "Built customer-facing ecommerce journeys across search, product detail, cart, authentication, checkout, and post-order visibility using React.js, Next.js, TypeScript, and Tailwind CSS.",
+        "Created responsive and reusable frontend components across key commerce flows.",
+        "Integrated checkout, payment, and order APIs to keep pricing, auth state, and transaction-sensitive updates aligned.",
+        "Worked across UI, API integration, and release workflows to deliver stable frontend features in production."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Smart Ecommerce Platform with Admin Dashboard",
+      "stack": "Next.js, TypeScript, Tailwind CSS, TanStack Query, Zustand, React Hook Form, Zod, TanStack Table, Recharts, MSW, Vercel",
+      "bullets": [
+        "Built a production-style ecommerce platform with customer storefront and role-based admin dashboard.",
+        "Implemented product discovery, product detail, cart, checkout, order success, account order history, admin product create/edit, admin order detail, and protected routes.",
+        "Added AI-powered dashboard insight cards and delivered a portfolio-grade frontend architecture with reusable UI, validated forms, filters, tables, and responsive product experiences."
+      ],
+      "liveHref": "https://smart-ecommerce-admin.vercel.app/",
+      "codeHref": "https://github.com/rampravesh19-96/smart-ecommerce-admin"
+    },
+    {
+      "title": "Smart Service Booking App",
+      "stack": "React Native, Expo, TypeScript, React Navigation, TanStack Query, Zustand",
+      "bullets": [
+        "Built a production-style React Native booking app with validated auth, discovery, service detail, reviews, and booking flow.",
+        "Implemented booking history, cancel/reschedule, profile/settings, notifications, support screens, and Smart Service Finder."
+      ],
+      "liveHref": "https://expo.dev/accounts/rams1996/projects/smart-service-booking-app/builds/7d8b696c-1fd2-4c20-b3b2-2fbade6fa33f",
+      "codeHref": "https://github.com/rampravesh19-96/smart-service-booking-mobile"
+    }
+  ],
+  "achievements": [
+    "Built and delivered responsive frontend features across ecommerce, travel-tech, and client-service projects using React.js, Next.js, and TypeScript.",
+    "Built and supported 10+ user-facing frontend flows across search, product detail, checkout, booking, authentication, payments, and order lifecycle experiences.",
+    "Improved development velocity by ~25–35% by streamlining frontend-backend integration, reusable components, and deployment processes.",
+    "Optimized frontend performance and API response handling, improving load time and perceived responsiveness across key user journeys by ~20–30%."
+  ],
+  "certifications": [
+    "React – The Complete Guide (incl. Hooks, Redux) – Udemy",
+    "CI/CD for Developers – GitHub Actions & Deployment Pipelines – Udemy / Coursera"
+  ],
+  "education": {
+    "degree": "B.Tech - Computer Science & Engineering",
+    "institution": "RGPV, Bhopal",
+    "year": "2021"
+  }
+}
