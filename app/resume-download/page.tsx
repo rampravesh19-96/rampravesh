@@ -25,9 +25,17 @@ type ResumeProject = {
   title: string;
   stack: string;
   bullets: string[];
-  liveHrefLabel: string;
+  liveHrefLabel?: string;
   liveHref: string;
   codeHref: string;
+  buildHrefLabel?: string;
+  buildHref?: string;
+};
+
+type ResumeOpenSourceItem = {
+  title: string;
+  bullets: string[];
+  links: ResumeLink[];
 };
 
 type ResumeData = {
@@ -42,9 +50,12 @@ type ResumeData = {
   skillGroups: ResumeSkillGroup[];
   experience: ResumeExperienceItem[];
   projects: ResumeProject[];
+  openSource?: ResumeOpenSourceItem[];
+  keyHighlights?: string[];
   achievements?: string[];
   certifications?: string[];
   aiTools?: string[];
+  developerTools?: string[];
   education: {
     degree: string;
     institution: string;
@@ -173,6 +184,37 @@ function validateResumeData(value: unknown): ResumeData {
     );
   }
 
+  if (data.openSource !== undefined) {
+    if (
+      !Array.isArray(data.openSource) ||
+      !data.openSource.every((item) => {
+        const record = item as Record<string, unknown>;
+        return (
+          item &&
+          typeof item === "object" &&
+          isString(record.title) &&
+          isStringArray(record.bullets) &&
+          Array.isArray(record.links) &&
+          record.links.every(
+            (link) =>
+              link &&
+              typeof link === "object" &&
+              isString((link as Record<string, unknown>).label) &&
+              isString((link as Record<string, unknown>).href),
+          )
+        );
+      })
+    ) {
+      throw new Error(
+        `"openSource" must be an array of { title, bullets[], links[] } objects.`,
+      );
+    }
+  }
+
+  if (data.keyHighlights !== undefined && !isStringArray(data.keyHighlights)) {
+    throw new Error(`"keyHighlights" must be an array of strings.`);
+  }
+
   if (
     !data.education ||
     typeof data.education !== "object" ||
@@ -195,6 +237,13 @@ function validateResumeData(value: unknown): ResumeData {
     throw new Error(`"aiTools" must be an array of strings.`);
   }
 
+  if (
+    data.developerTools !== undefined &&
+    !isStringArray(data.developerTools)
+  ) {
+    throw new Error(`"developerTools" must be an array of strings.`);
+  }
+
   return data as unknown as ResumeData;
 }
 
@@ -208,7 +257,7 @@ Your task:
 - Return the resume JSON updated to match the job description as strongly as possible for ATS and recruiter screening
 - Also return the exact best resume file name for that job application
 - Keep the same JSON structure unless a structural change is truly needed
-- Tailor title, headline, summary, skillGroups, experience, projects, achievements, certifications, aiTools, and education wording wherever useful
+- Tailor title, headline, summary, skillGroups, experience, keyHighlights, projects, openSource, achievements, certifications, developerTools, aiTools, and education wording wherever useful
 - Add only missing keywords or phrases from the JD that improve match quality
 - Do not add unnecessary alternative technologies
   Examples:
@@ -412,7 +461,56 @@ function ProjectItem({ project }: { project: ResumeProject }) {
             >
               GitHub
             </a>
+            {project.buildHref ? (
+              <>
+                <span className="text-slate-300">/</span>
+                <a
+                  href={project.buildHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
+                >
+                  {project.buildHrefLabel || "Build"}
+                </a>
+              </>
+            ) : null}
           </div>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+function OpenSourceItem({ item }: { item: ResumeOpenSourceItem }) {
+  return (
+    <article className="break-inside-auto border-b border-slate-200/85 pb-3 last:border-b-0 last:pb-0">
+      <div className="rounded-[12px] border border-slate-100 bg-slate-50/35 px-3 py-3 print:rounded-none print:border-0 print:bg-transparent print:px-0 print:py-0">
+        <div className="border-l-2 border-slate-200 pl-3 print:border-l print:pl-2.5">
+          <h3 className="text-[13.7px] font-semibold tracking-[-0.016em] text-slate-950 print:text-[11.85px]">
+            {item.title}
+          </h3>
+
+          <BulletList items={item.bullets} maxItems={3} compact />
+
+          {item.links.length > 0 ? (
+            <div className="mt-1.4 flex flex-wrap gap-x-3 gap-y-1 text-[11.5px] text-slate-700 print:text-[10.2px]">
+              {item.links.map((link, index) => (
+                <div key={link.href} className="inline-flex items-center gap-3">
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
+                  >
+                    {link.label}
+                  </a>
+                  {index < item.links.length - 1 ? (
+                    <span className="text-slate-300">/</span>
+                  ) : null}
+                </div>
+              ))}
+            </div>
+          ) : null}
         </div>
       </div>
     </article>
@@ -494,9 +592,11 @@ function ResumePreview({ data }: { data: ResumeData }) {
           </div>
         </SectionBlock>
 
-        <SectionBlock title="Technical Skills">
-          <SkillGroups groups={data.skillGroups} />
-        </SectionBlock>
+        {data.keyHighlights && data.keyHighlights.length > 0 ? (
+          <SectionBlock title="Key Highlights">
+            <BulletList items={data.keyHighlights} compact />
+          </SectionBlock>
+        ) : null}
 
         <SectionBlock title="Professional Experience">
           <div className="space-y-3 print:space-y-1.6">
@@ -517,6 +617,20 @@ function ResumePreview({ data }: { data: ResumeData }) {
           </div>
         </SectionBlock>
 
+        {data.openSource && data.openSource.length > 0 ? (
+          <SectionBlock title="Open Source Contributions">
+            <div className="space-y-2.5 print:space-y-1.4">
+              {data.openSource.map((item) => (
+                <OpenSourceItem key={item.title} item={item} />
+              ))}
+            </div>
+          </SectionBlock>
+        ) : null}
+
+        <SectionBlock title="Technical Skills">
+          <SkillGroups groups={data.skillGroups} />
+        </SectionBlock>
+
         {data.achievements && data.achievements.length > 0 ? (
           <SectionBlock title="Selected Achievements">
             <BulletList items={data.achievements} compact />
@@ -529,10 +643,10 @@ function ResumePreview({ data }: { data: ResumeData }) {
           </SectionBlock>
         ) : null}
 
-        {data.aiTools && data.aiTools.length > 0 ? (
+        {(data.developerTools?.length || data.aiTools?.length) ? (
           <SectionBlock title="AI Tools & Platforms">
             <p className="text-[11.65px] leading-[1.35] text-slate-600 print:text-[10.25px] print:leading-[1.19]">
-              {data.aiTools.join(", ")}
+              {(data.developerTools || data.aiTools || []).join(", ")}
             </p>
           </SectionBlock>
         ) : null}
