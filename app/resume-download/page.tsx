@@ -25,6 +25,7 @@ type ResumeProject = {
   title: string;
   stack: string;
   bullets: string[];
+  liveHrefLabel: string;
   liveHref: string;
   codeHref: string;
 };
@@ -72,7 +73,7 @@ type ApplicationEntry = {
 
 const defaultResumeData = initialResumeData as ResumeData;
 const initialJsonText = JSON.stringify(defaultResumeData, null, 2);
-const defaultFileName = "Ram-Pravesh-Resume";
+const defaultFileName = "Ram_Pravesh_Frontend";
 const APPLICATIONS_STORAGE_KEY = "resume_application_tracker_v1";
 
 function isString(value: unknown): value is string {
@@ -400,7 +401,7 @@ function ProjectItem({ project }: { project: ResumeProject }) {
               rel="noreferrer"
               className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
             >
-              Live Demo
+              {project.liveHrefLabel || "Live Demo"}
             </a>
             <span className="text-slate-300">/</span>
             <a
