@@ -5,9 +5,8 @@
   "phone": "+91-7320863504",
   "title": "Frontend Engineer",
   "headline": "Frontend Engineer | React.js, Next.js, React Native, TypeScript | Web & Mobile Applications",
-  "summary": "Frontend Engineer with 4+ years of experience building responsive web and mobile applications using React.js, Next.js, React Native, TypeScript, and JavaScript. Strong in reusable component architecture, API integration, authentication flows, checkout and booking journeys, performance optimization, and user-focused frontend delivery. Experienced in building production-ready features across ecommerce, travel-tech, and service-based client projects, with strong frontend delivery across API integration, authentication, release workflows, and mobile app deployment.",
+  "summary": "Frontend Engineer with 4+ years of experience building production-ready web and mobile applications using React.js, Next.js, React Native, TypeScript, and Tailwind CSS. Strong in reusable component architecture, API integration, authentication, checkout/booking flows, performance optimization, and release-ready frontend delivery.",
   "keyHighlights": [
-    "4+ years of frontend engineering experience across React.js, Next.js, React Native, TypeScript, ecommerce, travel-tech, and service-based products.",
     "Built and released portfolio-grade products with proof links across Google Play Store, Chrome Web Store, Vercel, and GitHub.",
     "Released a React Native service-booking app through Google Play Console testing using Expo EAS Build and Play Store release workflow.",
     "Made merged open-source frontend tooling contributions across React/TypeScript and Expo/React Native projects, including ESLint v9 setup and Jest TypeScript test infrastructure."
@@ -39,8 +38,7 @@
       "bullets": [
         "Built and shipped reusable React.js, Next.js, and React Native feature modules across multiple client-facing products, improving UI consistency and delivery speed.",
         "Developed responsive screens, reusable components, and feature flows for web and mobile applications with focus on scalability, maintainability, and fast client delivery.",
-        "Integrated frontend applications with REST APIs, authentication flows, form validation, and business workflows to deliver production-ready user experiences.",
-        "Supported release cycles through feature delivery, production bug fixes, QA collaboration, and cross-functional coordination in a fast-paced service delivery environment."
+        "Integrated frontend applications with REST APIs, authentication flows, form validation, and business workflows to deliver production-ready user experiences."
       ]
     },
     {
@@ -51,8 +49,7 @@
       "bullets": [
         "Built responsive travel booking journeys across search, results refinement, traveller capture, authentication, protected booking flow, and confirmation using React.js, Next.js, TypeScript, and Tailwind CSS.",
         "Developed reusable UI components and frontend flows for booking experiences with focus on usability, performance, and reliability.",
-        "Integrated booking, payment, and fare recheck APIs to support confirmation-sensitive user journeys and reduce booking-flow errors.",
-        "Collaborated with backend and deployment teams to deliver production-ready booking features and maintain operational reliability."
+        "Integrated booking, payment, and fare recheck APIs to support confirmation-sensitive user journeys and reduce booking-flow errors."
       ]
     },
     {
@@ -63,8 +60,7 @@
       "bullets": [
         "Built customer-facing ecommerce journeys across search, product detail, cart, coupons, authentication, protected checkout, and post-order visibility using React.js, Next.js, TypeScript, and Tailwind CSS.",
         "Created responsive and reusable frontend components to improve user experience across key commerce flows.",
-        "Integrated checkout, payment, and order APIs to keep pricing, auth state, and confirmation-sensitive transactions aligned.",
-        "Worked across UI development, API integration, bug fixing, and release workflows to deliver stable frontend features in production."
+        "Integrated checkout, payment, and order APIs to keep pricing, auth state, and confirmation-sensitive transactions aligned."
       ]
     }
   ],
@@ -75,8 +71,7 @@
       "bullets": [
         "Built a production-style React Native service-booking app with validated auth, home discovery, search, category listing, service detail, reviews, and a multi-step booking flow.",
         "Implemented booking lifecycle features including address selection, slot selection, booking summary, mock payment UX, booking success, booking history, cancel/reschedule flows, profile/settings, notifications, and support screens.",
-        "Added a practical AI-powered Smart Service Finder feature to map real user needs to service suggestions and booking guidance.",
-        "Released the Android app through Google Play Console testing using Expo EAS Build, including Play Store listing, Android build preparation, and real-device testing."
+        "Added an AI-powered Smart Service Finder and released the Android app through Google Play Console testing using Expo EAS Build, Play Store listing, and real-device testing."
       ],
       "liveHref": "https://play.google.com/store/apps/details?id=com.rampravesh.smartservicebookingapp",
       "codeHref": "https://github.com/rampravesh19-96/smart-service-booking-mobile",
@@ -118,15 +113,15 @@
       ],
       "links": [
         {
-          "label": "simple_invoicing PR #328",
+          "label": "PR #328",
           "href": "https://github.com/nikhilb2/simple_invoicing/pull/328"
         },
         {
-          "label": "Shelly PR #26",
+          "label": "PR #26",
           "href": "https://github.com/RYOITABASHI/Shelly/pull/26"
         },
         {
-          "label": "accessible-footnotes PR #20",
+          "label": "PR #20",
           "href": "https://github.com/KittyGiraudel/accessible-footnotes/pull/20"
         }
       ]
@@ -268,9 +263,9 @@
     "Optimized frontend performance and API response handling to improve load time and perceived responsiveness across key user journeys."
   ],
   "certifications": [
-    "React – The Complete Guide (incl. Hooks, Redux) – Udemy",
-    "Node.js, Express & MongoDB – The Complete Backend Bootcamp – Udemy",
-    "ChatGPT Prompt Engineering for Developers – DeepLearning.AI"
+    "React \u2013 The Complete Guide (incl. Hooks, Redux) \u2013 Udemy",
+    "Node.js, Express & MongoDB \u2013 The Complete Backend Bootcamp \u2013 Udemy",
+    "ChatGPT Prompt Engineering for Developers \u2013 DeepLearning.AI"
   ],
   "developerTools": [
     "ChatGPT",

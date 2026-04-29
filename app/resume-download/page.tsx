@@ -368,8 +368,8 @@ function BulletList({
     <ul
       className={
         compact
-          ? "mt-1.5 list-disc pl-5 space-y-[2px] text-[11.75px] leading-[1.4] text-slate-700 marker:text-slate-400 print:mt-1 print:text-[10.3px] print:leading-[1.23]"
-          : "mt-2 list-disc pl-5 space-y-[3px] text-[12.1px] leading-[1.5] text-slate-700 marker:text-slate-400 print:mt-1.2 print:text-[10.8px] print:leading-[1.28]"
+          ? "mt-1.5 list-disc pl-5 space-y-[2px] text-[11.75px] leading-[1.4] text-slate-700 marker:text-slate-400 print:mt-1 print:text-[9.7px] print:leading-[1.16]"
+          : "mt-2 list-disc pl-5 space-y-[3px] text-[12.1px] leading-[1.5] text-slate-700 marker:text-slate-400 print:mt-1.2 print:text-[10px] print:leading-[1.18]"
       }
     >
       {finalItems.map((item) => (
@@ -383,7 +383,7 @@ function BulletList({
 
 function HeaderLinks({ links }: { links: ResumeLink[] }) {
   return (
-    <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[11.8px] text-slate-700 print:mt-1.15 print:text-[10.4px]">
+    <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[11.8px] text-slate-700 print:mt-1.15 print:text-[9.8px]">
       {links.map((item, index) => (
         <div key={item.label} className="inline-flex items-center gap-2.5">
           <a
@@ -407,13 +407,13 @@ function formatDateRange(startDate: string, endDate: string) {
 
 function ExperienceItem({ item }: { item: ResumeExperienceItem }) {
   return (
-    <article className="break-inside-auto border-b border-slate-200/85 pb-3 last:border-b-0 last:pb-0">
+    <article className="break-inside-auto border-b border-slate-200/85 pb-2.5 last:border-b-0 last:pb-0">
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0">
-          <h3 className="text-[13.85px] font-semibold tracking-[-0.016em] text-slate-950 print:text-[12.05px]">
+          <h3 className="text-[13.85px] font-semibold tracking-[-0.016em] text-slate-950 print:text-[11.3px]">
             {item.title}
           </h3>
-          <p className="mt-0.55 text-[12.1px] font-medium text-slate-700 print:text-[10.8px]">
+          <p className="mt-0.55 text-[12.1px] font-medium text-slate-700 print:text-[10px]">
             {item.scope}
           </p>
         </div>
@@ -423,58 +423,60 @@ function ExperienceItem({ item }: { item: ResumeExperienceItem }) {
         </p>
       </div>
 
-      <BulletList items={item.bullets} maxItems={4} />
+      <BulletList items={item.bullets} maxItems={3} />
     </article>
   );
 }
 
 function ProjectItem({ project }: { project: ResumeProject }) {
   return (
-    <article className="break-inside-auto border-b border-slate-200/85 pb-3 last:border-b-0 last:pb-0">
+    <article className="break-inside-auto border-b border-slate-200/85 pb-2.5 last:border-b-0 last:pb-0">
       <div className="rounded-[12px] border border-slate-100 bg-slate-50/35 px-3 py-3 print:rounded-none print:border-0 print:bg-transparent print:px-0 print:py-0">
         <div className="border-l-2 border-slate-200 pl-3 print:border-l print:pl-2.5">
-          <h3 className="text-[13.7px] font-semibold tracking-[-0.016em] text-slate-950 print:text-[11.85px]">
-            {project.title}
-          </h3>
+          <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+            <h3 className="text-[13.7px] font-semibold tracking-[-0.016em] text-slate-950 print:text-[11.85px]">
+              {project.title}
+            </h3>
 
-          <p className="mt-0.6 text-[11.7px] leading-[1.41] text-slate-600 print:text-[10.3px] print:leading-[1.21]">
+            <div className="flex flex-wrap gap-x-2 gap-y-1 text-[11.2px] text-slate-700 print:text-[9.4px]">
+              <a
+                href={project.liveHref}
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
+              >
+                {project.liveHrefLabel || "Live Demo"}
+              </a>
+              <span className="text-slate-300">/</span>
+              <a
+                href={project.codeHref}
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
+              >
+                GitHub
+              </a>
+              {project.buildHref ? (
+                <>
+                  <span className="text-slate-300">/</span>
+                  <a
+                    href={project.buildHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
+                  >
+                    {project.buildHrefLabel || "Build"}
+                  </a>
+                </>
+              ) : null}
+            </div>
+          </div>
+
+          <p className="mt-0.6 text-[11.7px] leading-[1.41] text-slate-600 print:text-[9.7px] print:leading-[1.12]">
             {project.stack}
           </p>
 
           <BulletList items={project.bullets} maxItems={3} compact />
-
-          <div className="mt-1.4 flex flex-wrap gap-x-3 gap-y-1 text-[11.5px] text-slate-700 print:text-[10.2px]">
-            <a
-              href={project.liveHref}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
-            >
-              {project.liveHrefLabel || "Live Demo"}
-            </a>
-            <span className="text-slate-300">/</span>
-            <a
-              href={project.codeHref}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
-            >
-              GitHub
-            </a>
-            {project.buildHref ? (
-              <>
-                <span className="text-slate-300">/</span>
-                <a
-                  href={project.buildHref}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
-                >
-                  {project.buildHrefLabel || "Build"}
-                </a>
-              </>
-            ) : null}
-          </div>
         </div>
       </div>
     </article>
@@ -483,34 +485,36 @@ function ProjectItem({ project }: { project: ResumeProject }) {
 
 function OpenSourceItem({ item }: { item: ResumeOpenSourceItem }) {
   return (
-    <article className="break-inside-auto border-b border-slate-200/85 pb-3 last:border-b-0 last:pb-0">
+    <article className="break-inside-auto border-b border-slate-200/85 pb-2.5 last:border-b-0 last:pb-0 print:pb-1">
       <div className="rounded-[12px] border border-slate-100 bg-slate-50/35 px-3 py-3 print:rounded-none print:border-0 print:bg-transparent print:px-0 print:py-0">
         <div className="border-l-2 border-slate-200 pl-3 print:border-l print:pl-2.5">
-          <h3 className="text-[13.7px] font-semibold tracking-[-0.016em] text-slate-950 print:text-[11.85px]">
-            {item.title}
-          </h3>
+          <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+            <h3 className="text-[13.7px] font-semibold tracking-[-0.016em] text-slate-950 print:text-[11.5px]">
+              {item.title}
+            </h3>
+
+            {item.links.length > 0 ? (
+              <div className="flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-[11px] text-slate-700 print:text-[8.7px]">
+                {item.links.map((link, index) => (
+                  <span key={link.href} className="inline-flex whitespace-nowrap">
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
+                    >
+                      {link.label}
+                    </a>
+                    {index < item.links.length - 1 ? (
+                      <span className="ml-1.5 text-slate-300">/</span>
+                    ) : null}
+                  </span>
+                ))}
+              </div>
+            ) : null}
+          </div>
 
           <BulletList items={item.bullets} maxItems={3} compact />
-
-          {item.links.length > 0 ? (
-            <div className="mt-1.4 flex flex-wrap gap-x-3 gap-y-1 text-[11.5px] text-slate-700 print:text-[10.2px]">
-              {item.links.map((link, index) => (
-                <div key={link.href} className="inline-flex items-center gap-3">
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
-                  >
-                    {link.label}
-                  </a>
-                  {index < item.links.length - 1 ? (
-                    <span className="text-slate-300">/</span>
-                  ) : null}
-                </div>
-              ))}
-            </div>
-          ) : null}
         </div>
       </div>
     </article>
@@ -540,14 +544,16 @@ function SkillGroups({ groups }: { groups: ResumeSkillGroup[] }) {
 function SectionBlock({
   title,
   children,
+  breakBeforePrint = false,
 }: {
   title: string;
   children: React.ReactNode;
+  breakBeforePrint?: boolean;
 }) {
   return (
-    <section className="pt-5 print:pt-2.25">
+    <section className={`${breakBeforePrint ? "print:break-before-page" : ""} pt-5 print:pt-1.6`}>
       <SectionHeading>{title}</SectionHeading>
-      <div className="mt-2.25 print:mt-1.25">{children}</div>
+      <div className="mt-2.25 print:mt-0.9">{children}</div>
     </section>
   );
 }
@@ -557,9 +563,9 @@ function ResumePreview({ data }: { data: ResumeData }) {
     <article className="mx-auto w-full max-w-[210mm] overflow-hidden rounded-[26px] border border-black/5 bg-white text-slate-900 shadow-[0_32px_100px_rgba(15,23,42,0.12)] print:max-w-none print:rounded-none print:border-0 print:shadow-none">
       <div className="h-[4px] w-full bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 print:h-[2px] print:bg-slate-900" />
 
-      <div className="px-8 py-8 print:px-[10mm] print:py-[7.9mm]">
-        <header className="border-b border-slate-200/85 pb-5 print:pb-3">
-          <h1 className="text-[34px] font-semibold tracking-[-0.072em] text-slate-950 print:text-[26px]">
+      <div className="px-8 py-8 print:px-[8mm] print:py-[6mm]">
+        <header className="border-b border-slate-200/85 pb-5 print:pb-2">
+          <h1 className="text-[34px] font-semibold tracking-[-0.072em] text-slate-950 print:text-[24px]">
             {data.name}
           </h1>
 
@@ -571,7 +577,7 @@ function ResumePreview({ data }: { data: ResumeData }) {
             {data.headline}
           </p>
 
-          <div className="mt-2.35 flex flex-wrap gap-x-2 gap-y-1 text-[11.95px] leading-[1.38] text-slate-700 print:mt-1.3 print:text-[10.35px] print:leading-[1.2]">
+          <div className="mt-2.35 flex flex-wrap gap-x-2 gap-y-1 text-[11.95px] leading-[1.38] text-slate-700 print:mt-1.3 print:text-[9.8px] print:leading-[1.2]">
             <span>{data.location}</span>
             <span className="text-slate-300">•</span>
             <span>{data.phone}</span>
@@ -594,7 +600,7 @@ function ResumePreview({ data }: { data: ResumeData }) {
 
         {data.keyHighlights && data.keyHighlights.length > 0 ? (
           <SectionBlock title="Key Highlights">
-            <BulletList items={data.keyHighlights} compact />
+            <BulletList items={data.keyHighlights} maxItems={3} compact />
           </SectionBlock>
         ) : null}
 
@@ -610,7 +616,7 @@ function ResumePreview({ data }: { data: ResumeData }) {
         </SectionBlock>
 
         <SectionBlock title="Projects">
-          <div className="space-y-2.5 print:space-y-1.4">
+          <div className="space-y-2 print:space-y-0.8">
             {data.projects.map((project) => (
               <ProjectItem key={project.title} project={project} />
             ))}
@@ -619,7 +625,7 @@ function ResumePreview({ data }: { data: ResumeData }) {
 
         {data.openSource && data.openSource.length > 0 ? (
           <SectionBlock title="Open Source Contributions">
-            <div className="space-y-2.5 print:space-y-1.4">
+            <div className="space-y-2 print:space-y-0.8">
               {data.openSource.map((item) => (
                 <OpenSourceItem key={item.title} item={item} />
               ))}
