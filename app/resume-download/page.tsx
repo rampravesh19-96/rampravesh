@@ -633,15 +633,15 @@ function ResumePreview({ data }: { data: ResumeData }) {
           </SectionBlock>
         ) : null}
 
-        <SectionBlock title="Technical Skills">
-          <SkillGroups groups={data.skillGroups} />
-        </SectionBlock>
-
-        {data.achievements && data.achievements.length > 0 ? (
+                {data.achievements && data.achievements.length > 0 ? (
           <SectionBlock title="Selected Achievements">
             <BulletList items={data.achievements} compact />
           </SectionBlock>
         ) : null}
+
+        <SectionBlock title="Technical Skills">
+          <SkillGroups groups={data.skillGroups} />
+        </SectionBlock>
 
         {data.certifications && data.certifications.length > 0 ? (
           <SectionBlock title="Certifications">

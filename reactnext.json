@@ -5,7 +5,12 @@
   "phone": "+91-7320863504",
   "title": "Frontend Engineer",
   "headline": "React.js / Next.js Developer | TypeScript, Tailwind CSS | Scalable Web Applications",
-  "summary": "Frontend Engineer with 4+ years of experience building responsive web and mobile applications using React.js, Next.js, React Native, TypeScript, and JavaScript. Strong in reusable component architecture, API integration, authentication flows, checkout and booking journeys, performance optimization, and user-focused frontend delivery. Experienced in building production-ready features across ecommerce, travel-tech, and service-based client projects, with practical backend integration experience across REST APIs, authentication, Node.js/Express basics, Prisma, and SQL-based workflows.",
+  "summary": "Frontend Engineer with 4+ years of experience building production-ready web applications using React.js, Next.js, TypeScript, JavaScript, and Tailwind CSS. Strong in reusable component architecture, API integration, authentication, checkout/booking flows, performance optimization, and release-ready frontend delivery.",
+  "keyHighlights": [
+    "Built and released portfolio-grade web products with proof links across Chrome Web Store, Vercel, GitHub, and Google Play Store.",
+    "Built production-style React/Next.js projects across ecommerce, admin dashboards, Chrome extension tooling, booking flows, and API-driven frontend features.",
+    "Made merged open-source frontend tooling contributions across React/TypeScript projects, including ESLint v9 setup and Jest TypeScript test infrastructure."
+  ],
   "contactLinks": [
     {
       "label": "Portfolio",
@@ -23,6 +28,110 @@
       "label": "Leetcode",
       "href": "https://leetcode.com/u/Mc2py9Qomi"
     }
+  ],
+  "experience": [
+    {
+      "title": "Frontend Engineer",
+      "scope": "Sachram Technologies",
+      "startDate": "Sep 2025",
+      "endDate": "Present",
+      "bullets": [
+        "Built and shipped reusable React.js, Next.js, and React Native feature modules across multiple client-facing products, improving UI consistency and delivery speed.",
+        "Developed responsive screens, reusable components, and feature flows for web and mobile applications with focus on scalability, maintainability, and fast client delivery.",
+        "Integrated frontend applications with REST APIs, authentication flows, form validation, and business workflows to deliver production-ready user experiences."
+      ]
+    },
+    {
+      "title": "Frontend Engineer",
+      "scope": "HOI Travel Tech",
+      "startDate": "Jul 2024",
+      "endDate": "Aug 2025",
+      "bullets": [
+        "Built responsive travel booking journeys across search, results refinement, traveller capture, authentication, protected booking flow, and confirmation using React.js, Next.js, TypeScript, and Tailwind CSS.",
+        "Developed reusable UI components and frontend flows for booking experiences with focus on usability, performance, and reliability.",
+        "Integrated booking, payment, and fare recheck APIs to support confirmation-sensitive user journeys and reduce booking-flow errors."
+      ]
+    },
+    {
+      "title": "Frontend Engineer",
+      "scope": "Giottus Technology Pvt Ltd",
+      "startDate": "Jan 2022",
+      "endDate": "Jun 2024",
+      "bullets": [
+        "Built customer-facing ecommerce journeys across search, product detail, cart, coupons, authentication, protected checkout, and post-order visibility using React.js, Next.js, TypeScript, and Tailwind CSS.",
+        "Created responsive and reusable frontend components to improve user experience across key commerce flows.",
+        "Integrated checkout, payment, and order APIs to keep pricing, auth state, and confirmation-sensitive transactions aligned."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Smart Ecommerce Platform & Admin Dashboard",
+      "stack": "Next.js, TypeScript, Tailwind CSS, TanStack Query, Zustand, React Hook Form, Zod, TanStack Table, Recharts, MSW, Vercel",
+      "bullets": [
+        "Built a production-style ecommerce platform with a customer storefront and role-based admin dashboard covering product discovery, product detail, cart, checkout, order success, account order history, and order detail views.",
+        "Implemented protected customer and admin flows, admin product create/edit workflows, admin order detail with status updates, and typed mock API integrations using TanStack Query and Zustand.",
+        "Added practical AI-powered dashboard insight cards and delivered a portfolio-grade frontend architecture with reusable UI, validated forms, filters, tables, and responsive product experiences."
+      ],
+      "liveHref": "https://smart-ecommerce-admin.vercel.app/",
+      "codeHref": "https://github.com/rampravesh19-96/smart-ecommerce-admin"
+    },
+    {
+      "title": "Frontend Audit Extension",
+      "stack": "React, TypeScript, Vite, Chrome Manifest V3, Tailwind CSS, Chrome Storage API, Content Scripts",
+      "bullets": [
+        "Built a production-style Chrome extension that analyzes live webpages for SEO, accessibility, image, and page structure issues using content scripts and browser APIs.",
+        "Implemented multi-category audit scoring, severity-based issue recommendations, restricted-page handling, and local audit history using Chrome Storage API.",
+        "Added JSON/CSV report export and a polished popup UI with loading, empty, error, saved audit, and result states."
+      ],
+      "liveHrefLabel": "Chrome Web Store",
+      "liveHref": "https://chromewebstore.google.com/detail/frontend-audit-extension/epcflhhnpmdmngfaahodceklckhhoeil",
+      "codeHref": "https://github.com/rampravesh19-96/frontend-audit-extension"
+    },
+    {
+      "title": "Smart Service Booking App",
+      "stack": "React Native, Expo, TypeScript, React Navigation, TanStack Query, Zustand, React Hook Form, Zod, Expo Secure Store, Expo Image, Reanimated, EAS Build, Google Play Console, Play Store Testing Release",
+      "bullets": [
+        "Built a production-style React Native service-booking app with validated auth, home discovery, search, category listing, service detail, reviews, and a multi-step booking flow.",
+        "Implemented booking lifecycle features including address selection, slot selection, booking summary, mock payment UX, booking success, booking history, cancel/reschedule flows, profile/settings, notifications, and support screens.",
+        "Added an AI-powered Smart Service Finder and released the Android app through Google Play Console testing using Expo EAS Build, Play Store listing, and real-device testing."
+      ],
+      "liveHref": "https://play.google.com/store/apps/details?id=com.rampravesh.smartservicebookingapp",
+      "codeHref": "https://github.com/rampravesh19-96/smart-service-booking-mobile",
+      "liveHrefLabel": "Play Store",
+      "buildHrefLabel": "Expo Build",
+      "buildHref": "https://expo.dev/accounts/rams1996/projects/smart-service-booking-app/builds/7d8b696c-1fd2-4c20-b3b2-2fbade6fa33f"
+    }
+  ],
+  "openSource": [
+    {
+      "title": "Frontend Tooling & TypeScript Contributions",
+      "bullets": [
+        "Contributed ESLint v9 frontend tooling setup to an open-source React/TypeScript project, adding flat config, lint script, and resolving blocking lint errors.",
+        "Set up Jest TypeScript test infrastructure for an open-source Expo/React Native project, including pnpm test script, Jest config, and pure TypeScript example tests.",
+        "Contributed to a React accessibility package TypeScript migration, including typed component props, TypeScript build configuration, and generated declaration handling; PR reviewed and pending merge."
+      ],
+      "links": [
+        {
+          "label": "PR #328",
+          "href": "https://github.com/nikhilb2/simple_invoicing/pull/328"
+        },
+        {
+          "label": "PR #26",
+          "href": "https://github.com/RYOITABASHI/Shelly/pull/26"
+        },
+        {
+          "label": "PR #20",
+          "href": "https://github.com/KittyGiraudel/accessible-footnotes/pull/20"
+        }
+      ]
+    }
+  ],
+  "achievements": [
+    "Built and supported 10+ user-facing frontend flows across search, product detail, checkout, booking, authentication, payments, and order lifecycle experiences.",
+    "Improved frontend delivery speed by streamlining reusable components, API integration patterns, form handling, and deployment workflows.",
+    "Built and submitted Frontend Audit Extension for Chrome Web Store review, covering SEO, accessibility, image checks, audit scoring, local history, and JSON/CSV export.",
+    "Optimized frontend performance and API response handling to improve load time and perceived responsiveness across key user journeys."
   ],
   "skillGroups": [
     {
@@ -73,17 +182,17 @@
       ]
     },
     {
-      "title": "Mobile Development",
+      "title": "Commerce, Booking & Payments",
       "items": [
-        "Expo",
-        "React Navigation",
-        "Cross-platform App Development",
-        "Mobile UI Development",
-        "Booking Flow UX",
-        "Secure Storage",
-        "Gesture-based Interactions",
-        "Android APK Build",
-        "Expo EAS Build"
+        "Checkout Flow",
+        "Booking Flow",
+        "Order Management",
+        "Booking Lifecycle",
+        "Payment Integration",
+        "Payment Verification",
+        "Razorpay",
+        "Fare Recheck",
+        "Transaction-sensitive Workflows"
       ]
     },
     {
@@ -103,20 +212,6 @@
       ]
     },
     {
-      "title": "Commerce, Booking & Payments",
-      "items": [
-        "Checkout Flow",
-        "Booking Flow",
-        "Order Management",
-        "Booking Lifecycle",
-        "Payment Integration",
-        "Payment Verification",
-        "Razorpay",
-        "Fare Recheck",
-        "Transaction-sensitive Workflows"
-      ]
-    },
-    {
       "title": "Deployment & Tooling",
       "items": [
         "Vercel",
@@ -128,7 +223,10 @@
         "CI/CD",
         "Docker",
         "Cursor",
-        "GitHub Copilot"
+        "GitHub Copilot",
+        "Google Play Console",
+        "Play Store Release Management",
+        "ESLint v9"
       ]
     },
     {
@@ -140,89 +238,29 @@
         "Integration Testing",
         "Code Review",
         "Release Support",
-        "Production Bug Fixing"
+        "Production Bug Fixing",
+        "Jest",
+        "TypeScript Test Setup",
+        "Open Source Contributions"
+      ]
+    },
+    {
+      "title": "Mobile Development",
+      "items": [
+        "Expo",
+        "React Navigation",
+        "Cross-platform App Development",
+        "Mobile UI Development",
+        "Booking Flow UX",
+        "Secure Storage",
+        "Gesture-based Interactions",
+        "Android APK Build",
+        "Expo EAS Build",
+        "Google Play Console",
+        "Android App Bundle (AAB)",
+        "Play Store Testing Release"
       ]
     }
-  ],
-  "experience": [
-    {
-      "title": "Frontend Engineer",
-      "scope": "Sachram Technologies",
-      "startDate": "Sep 2025",
-      "endDate": "Present",
-      "bullets": [
-        "Built and shipped reusable React.js, Next.js, and React Native feature modules across multiple client-facing products, improving UI consistency and delivery speed.",
-        "Developed responsive screens, reusable components, and feature flows for web and mobile applications with focus on scalability, maintainability, and fast client delivery.",
-        "Integrated frontend applications with REST APIs, authentication flows, form validation, and business workflows to deliver production-ready user experiences.",
-        "Supported release cycles through feature delivery, production bug fixes, QA collaboration, and cross-functional coordination in a fast-paced service delivery environment."
-      ]
-    },
-    {
-      "title": "Frontend Engineer",
-      "scope": "HOI Travel Tech",
-      "startDate": "Jul 2024",
-      "endDate": "Aug 2025",
-      "bullets": [
-        "Built responsive travel booking journeys across search, results refinement, traveller capture, authentication, protected booking flow, and confirmation using React.js, Next.js, TypeScript, and Tailwind CSS.",
-        "Developed reusable UI components and frontend flows for booking experiences with focus on usability, performance, and reliability.",
-        "Integrated booking, payment, and fare recheck APIs to support confirmation-sensitive user journeys and reduce booking-flow errors.",
-        "Collaborated with backend and deployment teams to deliver production-ready booking features and maintain operational reliability."
-      ]
-    },
-    {
-      "title": "Frontend Engineer",
-      "scope": "Giottus Technology Pvt Ltd",
-      "startDate": "Jan 2022",
-      "endDate": "Jun 2024",
-      "bullets": [
-        "Built customer-facing ecommerce journeys across search, product detail, cart, coupons, authentication, protected checkout, and post-order visibility using React.js, Next.js, TypeScript, and Tailwind CSS.",
-        "Created responsive and reusable frontend components to improve user experience across key commerce flows.",
-        "Integrated checkout, payment, and order APIs to keep pricing, auth state, and confirmation-sensitive transactions aligned.",
-        "Worked across UI development, API integration, bug fixing, and release workflows to deliver stable frontend features in production."
-      ]
-    }
-  ],
-  "projects": [
-        {
-      "title": "Smart Ecommerce Platform & Admin Dashboard",
-      "stack": "Next.js, TypeScript, Tailwind CSS, TanStack Query, Zustand, React Hook Form, Zod, TanStack Table, Recharts, MSW, Vercel",
-      "bullets": [
-        "Built a production-style ecommerce platform with a customer storefront and role-based admin dashboard covering product discovery, product detail, cart, checkout, order success, account order history, and order detail views.",
-        "Implemented protected customer and admin flows, admin product create/edit workflows, admin order detail with status updates, and typed mock API integrations using TanStack Query and Zustand.",
-        "Added practical AI-powered dashboard insight cards and delivered a portfolio-grade frontend architecture with reusable UI, validated forms, filters, tables, and responsive product experiences."
-      ],
-      "liveHref": "https://smart-ecommerce-admin.vercel.app/",
-      "codeHref": "https://github.com/rampravesh19-96/smart-ecommerce-admin"
-    },
-    {
-      "title": "Frontend Audit Extension",
-      "stack": "React, TypeScript, Vite, Chrome Manifest V3, Tailwind CSS, Chrome Storage API, Content Scripts",
-      "bullets": [
-        "Built a production-style Chrome extension that analyzes live webpages for SEO, accessibility, image, and page structure issues using content scripts and browser APIs.",
-        "Implemented multi-category audit scoring, severity-based issue recommendations, restricted-page handling, and local audit history using Chrome Storage API.",
-        "Added JSON/CSV report export and a polished popup UI with loading, empty, error, saved audit, and result states."
-      ],
-      "liveHrefLabel": "Chrome Web Store",
-      "liveHref": "https://chromewebstore.google.com/detail/frontend-audit-extension/epcflhhnpmdmngfaahodceklckhhoeil",
-      "codeHref": "https://github.com/rampravesh19-96/frontend-audit-extension"
-    },
-    {
-      "title": "Smart Service Booking App",
-      "stack": "React Native, Expo, TypeScript, React Navigation, TanStack Query, Zustand, React Hook Form, Zod, Expo Secure Store, Expo Image, Reanimated, EAS Build",
-      "bullets": [
-        "Built a production-style React Native service-booking app with validated auth, home discovery, search, category listing, service detail, reviews, and a multi-step booking flow.",
-        "Implemented booking lifecycle features including address selection, slot selection, booking summary, mock payment UX, booking success, booking history, cancel/reschedule flows, profile/settings, notifications, and support screens.",
-        "Added a practical AI-powered Smart Service Finder feature to map real user needs to service suggestions and booking guidance, and generated Android APK builds for device testing using Expo EAS."
-      ],
-      "liveHref": "https://expo.dev/accounts/rams1996/projects/smart-service-booking-app/builds/7d8b696c-1fd2-4c20-b3b2-2fbade6fa33f",
-      "codeHref": "https://github.com/rampravesh19-96/smart-service-booking-mobile"
-    }
-  ],
-  "achievements": [
-    "Built and supported 10+ user-facing frontend flows across search, product detail, checkout, booking, authentication, payments, and order lifecycle experiences.",
-    "Improved frontend delivery speed by streamlining reusable components, API integration patterns, form handling, and deployment workflows.",
-    "Built and submitted Frontend Audit Extension for Chrome Web Store review, covering SEO, accessibility, image checks, audit scoring, local history, and JSON/CSV export.",
-    "Optimized frontend performance and API response handling to improve load time and perceived responsiveness across key user journeys."
   ],
   "certifications": [
     "React – The Complete Guide (incl. Hooks, Redux) – Udemy",
