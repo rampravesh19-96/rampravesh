@@ -98,9 +98,7 @@
       ],
       "liveHref": "https://play.google.com/store/apps/details?id=com.rampravesh.smartservicebookingapp",
       "codeHref": "https://github.com/rampravesh19-96/smart-service-booking-mobile",
-      "liveHrefLabel": "Play Store",
-      "buildHrefLabel": "Expo Build",
-      "buildHref": "https://expo.dev/accounts/rams1996/projects/smart-service-booking-app/builds/7d8b696c-1fd2-4c20-b3b2-2fbade6fa33f"
+      "liveHrefLabel": "Play Store"
     }
   ],
   "openSource": [

@@ -65,21 +65,7 @@
     }
   ],
   "projects": [
-    {
-      "title": "Smart Service Booking App",
-      "stack": "React Native, Expo, TypeScript, React Navigation, TanStack Query, Zustand, React Hook Form, Zod, Expo Secure Store, Expo Image, Reanimated, EAS Build, Google Play Console, Play Store Testing Release",
-      "bullets": [
-        "Built a production-style React Native service-booking app with validated auth, home discovery, search, category listing, service detail, reviews, and a multi-step booking flow.",
-        "Implemented booking lifecycle features including address selection, slot selection, booking summary, mock payment UX, booking success, booking history, cancel/reschedule flows, profile/settings, notifications, and support screens.",
-        "Added an AI-powered Smart Service Finder and released the Android app through Google Play Console testing using Expo EAS Build, Play Store listing, and real-device testing."
-      ],
-      "liveHref": "https://play.google.com/store/apps/details?id=com.rampravesh.smartservicebookingapp",
-      "codeHref": "https://github.com/rampravesh19-96/smart-service-booking-mobile",
-      "liveHrefLabel": "Play Store",
-      "buildHrefLabel": "Expo Build",
-      "buildHref": "https://expo.dev/accounts/rams1996/projects/smart-service-booking-app/builds/7d8b696c-1fd2-4c20-b3b2-2fbade6fa33f"
-    },
-    {
+        {
       "title": "Frontend Audit Extension",
       "stack": "React, TypeScript, Vite, Chrome Manifest V3, Tailwind CSS, Chrome Storage API, Content Scripts",
       "bullets": [
@@ -101,6 +87,18 @@
       ],
       "liveHref": "https://smart-ecommerce-admin.vercel.app/",
       "codeHref": "https://github.com/rampravesh19-96/smart-ecommerce-admin"
+    },
+    {
+      "title": "Smart Service Booking App",
+      "stack": "React Native, Expo, TypeScript, React Navigation, TanStack Query, Zustand, React Hook Form, Zod, Expo Secure Store, Expo Image, Reanimated, EAS Build, Google Play Console, Play Store Testing Release",
+      "bullets": [
+        "Built a production-style React Native service-booking app with validated auth, home discovery, search, category listing, service detail, reviews, and a multi-step booking flow.",
+        "Implemented booking lifecycle features including address selection, slot selection, booking summary, mock payment UX, booking success, booking history, cancel/reschedule flows, profile/settings, notifications, and support screens.",
+        "Added an AI-powered Smart Service Finder and released the Android app through Google Play Console testing using Expo EAS Build, Play Store listing, and real-device testing."
+      ],
+      "liveHref": "https://play.google.com/store/apps/details?id=com.rampravesh.smartservicebookingapp",
+      "codeHref": "https://github.com/rampravesh19-96/smart-service-booking-mobile",
+      "liveHrefLabel": "Play Store"
     }
   ],
   "openSource": [
