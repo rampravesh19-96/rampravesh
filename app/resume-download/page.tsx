@@ -454,7 +454,7 @@ function ProjectItem({ project }: { project: ResumeProject }) {
                 rel="noreferrer"
                 className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
               >
-                GitHub
+                {project.codeHrefLabel || "GitHub"}
               </a>
               {project.buildHref ? (
                 <>
