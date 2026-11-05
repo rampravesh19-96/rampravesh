@@ -26,6 +26,7 @@ type ResumeProject = {
   stack: string;
   bullets: string[];
   liveHrefLabel?: string;
+  codeHrefLabel?: string;
   liveHref: string;
   codeHref: string;
   buildHrefLabel?: string;
