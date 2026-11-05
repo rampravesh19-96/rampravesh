@@ -445,7 +445,7 @@ function ProjectItem({ project }: { project: ResumeProject }) {
                 rel="noreferrer"
                 className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
               >
-                {project.liveHrefLabel || "Live Demo"}
+                {project.liveHrefLabel || ""}
               </a>
               <span className="text-slate-300">/</span>
               <a
@@ -454,7 +454,7 @@ function ProjectItem({ project }: { project: ResumeProject }) {
                 rel="noreferrer"
                 className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-[3px]"
               >
-                {project.codeHrefLabel || "GitHub"}
+                {project.codeHrefLabel || ""}
               </a>
               {project.buildHref ? (
                 <>
